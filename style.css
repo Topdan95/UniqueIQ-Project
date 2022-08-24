@@ -1,0 +1,142 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    height: 500px;
+    width: 100%; 
+    background-image: url(./images/rect1.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.logo {
+    display: none;
+}
+header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    height: 70px;
+}
+.nav {
+    display: flex;
+    align-items: flex-end;
+    margin-left: 750px;
+}
+.nav li {
+    list-style-type: none;
+    cursor: pointer;
+    margin-right: 30px;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    color: #FFFFFF;
+}
+.nav li button {
+    border-radius: 5px;
+    height: 40px;
+    width: 100px;
+    justify-items: center;
+}
+nav li div {
+    display: flex;
+    justify-content: space-between;
+}
+.hero {
+    display: flex;
+}
+.item{
+    width: 50%;
+}
+.item2 img {
+    width: 450px;
+    margin-top: 50px;
+    margin-left: 130px;
+}
+h3 {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 49px;
+    color: #FFFFFF;
+    margin-left: 57px;
+    margin-top: 60px;
+}
+p {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    color: #FFFFFF;
+    margin-left: 57px;
+    margin-top: 15px;
+}
+input {
+    margin-left: 57px;
+    margin-top: 15px;
+    height: 30px;
+    width: 52%;
+}
+.browse {
+
+}
+.courses {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 33px;
+    color: #071533;
+    margin-left: 51px;
+    margin-top: 275px;
+}
+.various {
+    display: flex;
+    align-items: flex-start;
+    list-style-type: none;
+    cursor: pointer;
+    margin-left: 0px;
+    margin-top: 20px;
+    justify-content: space-around;
+}
+.various li {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 22px;
+    color: #000000;
+}
+.special div {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 22px;
+    color: #071533;
+}
+/* .nav1 li {
+    list-style-type: none;
+    cursor: pointer;
+    margin-right: 30px;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 22px;
+    color: #000000;
+}
+.nav1 li div {
+    display: flex;
+    justify-content: space-between;
+}
+.nav1 {
+    display: flex;
+    align-items: flex-end;
+    margin-left: 750px;
+} */
