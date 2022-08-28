@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,49 +9,402 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="./images/logo.svg" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/5ffe98f822.js" crossorigin="anonymous"></script>
     <title>UniqueIQ</title>
-</head>
-<body>
-    <header>
-      <div class="logo">
-          <img src="./images/logo.svg" alt="logo">
-      </div>
-      <nav class="nav">
-              <li>Home</li>
-              <li>Course Categories</li>
-      <div class="vector">
-          <img src="./images/vector.svg" alt="vector">
-      </div>
-              <li>About Us</li>
-              <li>Log In</li>
-              <li><button id="btn">Sign Up</button></li>
-      </nav>
-    </header> 
-    <main class="hero">
-        <div class="item item1">
-            <h3>You Can Start<br>Learning At Any Age!</h3>
-            <p>Our courses are desgined to provide traning that’s as<br>streamlined and to th the end point as possible</p>
-            <input type="text" placeholder="Search For Course">
-        </div>  
-        <div class="item item2">
-            <img src="./images/pic1.svg" alt="a man">
+  </head>
+  <body>
+    <div class="mobile-navbar">
+      <div class="mobile-container">
+        <div class="menu-botton">
+          <div class="hamburger">
+            <img src="./images/hamburger.svg" alt="hamburger">
+          </div>
+          <div class="mobile-navigations">
+            <div class="sign">
+              <div class="sign-up"><a href="./Pages/SignUp/signup.html">Sign Up</a></div>
+              <div class="log-in"><a href="#">Log In</a></div>
+            </div>
+            <div class="mobile-lists">
+              <ul>
+                <li>Course</li>
+                <li>Artificial Intelligence <i class="fa-solid fa-chevron-right"></i></li>
+                <li>Branding <i class="fa-solid fa-chevron-right"></i></li>
+                <li>Business <i class="fa-solid fa-chevron-right"></i></li>
+                <li>Design <i class="fa-solid fa-chevron-right"></i></li>
+                <li>Data & Analytic <i class="fa-solid fa-chevron-right"></i></li>
+                <li>Help</li>
+                <li>Log Out</li>
+              </ul>
+            </div>
+          </div>
         </div>
-    </main>
+        <div class="mobile-logo">
+          <div class="logo">
+            <img src="./images/logo.svg" alt="The UniqeIQ">
+          </div>
+          <div>
+            <img src="./images/feather_search.svg" alt="">
+          </div>
+          <div>
+            <img src="./images/cart.svg" alt="cart">
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="showcase">
+      <header>
+        <nav class="nav">
+          <ul>
+            <li><a href="/">Home</a></li>
+            <li>Course Categories <i class="fa-solid fa-chevron-down"></i></li>
+            <li><a href="./Pages/AboutUs/about.html">About Us</a></li>
+            <li>Log In</li>
+            <li><a href="./Pages/SignUp/signup.html"><button class="btn">Sign Up</button></a></li>
+          </ul>
+        </nav>
+      </header> 
+      <main class="hero">
+          <div class="item item1">
+              <h3>You Can Start<br>Learning At Any Age!</h3>
+              <p>Our courses are desgined to provide traning that’s as streamlined and to the end point as possible</p>
+              <div class="search">
+                <input type="text" placeholder="Search For Course">
+                <i class="fa-solid fa-magnifying-glass"></i>
+              </div>
+          </div>  
+          <div class="item item2">
+              <img src="./images/pic1.png" alt="a man">
+          </div>
+      </main>
+    </div>
+
     <section class="browse">
-      <div class="courses">
-        <h4>Browse Courses</h4>
+      <div class="container">
+        <div>
+          <div class="courses">
+            <h4>Browse Courses</h4>
+          </div>
+          <div class="various">
+            <ul>
+              <li>Artficial Intelligence</li>
+              <li>Agile & HR<br>Development</li>
+              <li class="active">Branding & <br> Designs</li>
+              <li>Businesss</li>
+              <li>Data &<br>Analytics</li>
+              <li>Programming</li>
+              <li>More</li>
+            </ul>
+          </div>
+          <div class="throw-up">
+            <i class="fa-solid fa-chevron-up"></i>
+          </div>
+        </div>
+        <div class="cards">
+          <div class="card">
+            <img src="./images/card1.png" alt="card 1">
+            <div class="card-container">
+              <h4>Branding: The Creative <br> Journey</h4>
+              <h6>Ogungbemi Tobi</h6>
+              <div class="rating">
+                <div class="star">
+                  <div class="stars">
+                    <img src="./images/Star1.png" alt="rating">
+                    <img src="./images/Star1.png" alt="rating">
+                    <img src="./images/Star1.png" alt="rating">
+                    <img src="./images/Star1.png" alt="rating">
+                  </div>
+                  <h5>4.0</h5>
+                </div>
+                <div class="count">
+                  <img src="./images/eye.svg" alt="">
+                  <h51,000</h5>
+                </div>
+              </div>
+              <div class="sales">
+                <h5><span>$100</span></h5>
+                <h2>$30</h2>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <img src="./images/card2.png" alt="card 2">
+            <div class="card-container">
+              <h4>Introduction to Personal <br> Branding</h4>
+              <h6>Ogungbemi Tobi</h6>
+              <div class="rating">
+                <div class="star">
+                  <div class="stars">
+                    <img src="./images/Star1.png" alt="rating">
+                    <img src="./images/Star1.png" alt="rating">
+                    <img src="./images/Star1.png" alt="rating">
+                    <img src="./images/Star1.png" alt="rating">
+                  </div>
+                  <h5>4.0</h5>
+                </div>
+                <div class="count">
+                  <img src="./images/eye.svg" alt="">
+                  <h5>1,000</h5>
+                </div>
+              </div>
+              <div class="sales">
+                <h5><span>$100</span></h5>
+                <h2>$30</h2>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <img src="./images/card3.png" alt="card 3">
+            <div class="card-container">
+              <h4>Brand Identity and Strategy <br> In Business</h4>
+              <h6>Ogungbemi Tobi</h6>
+              <div class="rating">
+                <div class="star">
+                  <div class="stars">
+                    <img src="./images/Star1.png" alt="rating">
+                    <img src="./images/Star1.png" alt="rating">
+                    <img src="./images/Star1.png" alt="rating">
+                    <img src="./images/Star1.png" alt="rating">
+                  </div>
+                  <h5>4.0</h5>
+                </div>
+                <div class="count">
+                  <img src="./images/eye.svg" alt="">
+                  <h5>1,000</h5>
+                </div>
+              </div>
+              <div class="sales">
+                <h5><span>$100</span></h5>
+                <h2>$30</h2>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <img src="./images/card3.png" alt="card 3">
+            <div class="card-container">
+              <h4>Brand Identity and Strategy <br> In Business</h4>
+              <h6>Ogungbemi Tobi</h6>
+              <div class="rating">
+                <div class="star">
+                  <div class="stars">
+                    <img src="./images/Star1.png" alt="rating">
+                    <img src="./images/Star1.png" alt="rating">
+                    <img src="./images/Star1.png" alt="rating">
+                    <img src="./images/Star1.png" alt="rating">
+                  </div>
+                  <h5>4.0</h5>
+                </div>
+                <div class="count">
+                  <img src="./images/eye.svg" alt="">
+                  <h5>1,000</h5>
+                </div>
+              </div>
+              <div class="sales">
+                <h5><span>$100</span></h5>
+                <h2>$30</h2>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <img src="./images/card3.png" alt="card 3">
+            <div class="card-container">
+              <h4>Brand Identity and Strategy <br> In Business</h4>
+              <h6>Ogungbemi Tobi</h6>
+              <div class="rating">
+                <div class="star">
+                  <div class="stars">
+                    <img src="./images/Star1.png" alt="rating">
+                    <img src="./images/Star1.png" alt="rating">
+                    <img src="./images/Star1.png" alt="rating">
+                    <img src="./images/Star1.png" alt="rating">
+                  </div>
+                  <h5>4.0</h5>
+                </div>
+                <div class="count">
+                  <img src="./images/eye.svg" alt="">
+                  <h5>1,000</h5>
+                </div>
+              </div>
+              <div class="sales">
+                <h5><span>$100</span></h5>
+                <h2>$30</h2>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-      <!-- <nav class="nav1"> -->
-      <div class="various">
-        <li>Artficial Intelligence</li>
-        <li>Agile & HR<br>Development</li>
-        <div class="special"><li>Branding & Designs</li></div>
-        <li>Businesss</li>
-        <li>Data &<br>Analytics</li>
-        <li>Programming</li>
-        <li>More</li>
-      </div>
-      <!-- </nav> -->
     </section>
+
+    <section class="usage">
+      <div class="title">
+        <h1>Utilizing your time and rescourses for creativity</h1>
+        <h3>Egestas eleifend risus dui tempor morbi maecenas scelerisque </h3>
+      </div>
+      <div class="carrds">
+        <div class="carrd">
+          <div class="icon">
+            <img src="./images/two.svg" alt="">
+          </div>
+          <div>
+            <h3>
+              Learn From Your Comfort Zone’s
+            </h3>
+            <p>Egestas eleifend risus dui tempor morbi maecenas scelerisque eu. Eget ultrices cursus at vel.</p>
+          </div>
+        </div>
+        <div class="carrd">
+          <div class="icon">
+            <img src="./images/two.svg" alt="">
+          </div>
+          <div>
+            <h3>
+              Learn From Expert in the Industry.
+            </h3>
+            <p>Egestas eleifend risus dui tempor morbi maecenas scelerisque eu. Eget ultrices cursus at vel.</p>
+          </div>
+        </div>
+        <div class="carrd">
+          <div class="icon">
+            <img src="./images/three.svg" alt="">
+          </div>
+          <div>
+            <h3>
+              All Courses Simplified as Much As Possible
+            </h3>
+            <p>Egestas eleifend risus dui tempor morbi maecenas scelerisque eu. Eget ultrices cursus at vel.</p>
+          </div>
+        </div>
+        <div class="carrd">
+          <div class="icon">
+            <img src="./images/three.svg" alt="">
+          </div>
+          <div>
+            <h3>
+              All Courses Simplified as Much As Possible
+            </h3>
+            <p>Egestas eleifend risus dui tempor morbi maecenas scelerisque eu. Eget ultrices cursus at vel.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="explore">
+      <h1>Build , Create, Innovate with our top notch courses online</h1>
+      <h4>Egestas eleifend risus dui tempor morbi maecenas scelerisque </h4>
+      <button>Explore Courses</button>
+    </section>
+
+    <section class="students">
+      <div class="container">
+        <h2>What Our Students Have To Say</h2>
+        <div class="cardds">
+          <div class="cardd">
+            <div class="profile">
+              <img src="./images/Ellipse2.png" alt="Mary">
+              <h4>Mary</h4>
+            </div>
+            <p>TheUniqueIQ is a life saver. I don't have the time or money for a college education. My goal is to become a freelance web developer, and thanks to TheUniqueIQ, I'm really close.</p>
+          </div>
+          <div class="cardd">
+            <div class="profile">
+              <img src="./images/Ellipse3.png" alt="Mary">
+              <h4>Mary</h4>
+            </div>
+            <p>TheUniqueIQ is a life saver. I don't have the time or money for a college education. My goal is to become a freelance web developer, and thanks to TheUniqueIQ, I'm really close.</p>
+          </div>
+          <div class="cardd">
+            <div class="profile">
+              <img src="./images/Ellipse4.png" alt="Mary">
+              <h4>Mary</h4>
+            </div>
+            <p>TheUniqueIQ is a life saver. I don't have the time or money for a college education. My goal is to become a freelance web developer, and thanks to TheUniqueIQ, I'm really close.</p>
+          </div>
+        </div>
+        <div class="toggle">
+          <i class="fa-solid fa-chevron-right"></i>
+        </div>
+        <h3>Our Tutors And Mentors Come From Leading Companies</h3>
+        <div class="logos">
+          <img src="./images/google.png" alt="googla">
+          <img src="./images/andela.png" alt="andela">
+          <img src="./images/intelia.png" alt="intelia">
+          <img src="./images/flutterwave.png" alt="flutterwave">
+          <img src="./images/paystack.png" alt="paystack">
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="container">
+        <div class="main-content">
+          <div class="logo-section foot">
+            <div class="banner">
+              <img src="./images/logo.svg" alt="UniqueIQ">
+            </div>
+            <div class="about">
+              <h3><a href="./Pages/AboutUs/about.html">About Us</a></h3>
+              <p>The UniqueIQ is the first of its kind in Africa. An organisation that leverages best in class teachers, </p>
+            </div>
+            <div class="contact">
+              <h3>Contact Us</h3>
+              <div>
+                <img src="./images/tel.svg" alt="tel">
+                <span>+2349080281275</span>
+              </div>
+              <div>
+                <img src="./images/msg.svg" alt="msg">
+                <span>grazactech@gmail.com</span>
+              </div>
+              <div>
+                <img src="./images/loc.svg" alt="loc">
+                <span>2a Ibara housing estate kuto, Abeokuta Ogun state</span>
+              </div>
+            </div>
+          </div>
+          <div class="infos foot">          
+            <div class="info information">
+              <h4>Information</h4>
+              <ul>
+                <li>Home</li>
+                <li>Log In</li>
+                <li>Our Story</li>
+                <li>Register</li>
+              </ul>
+            </div>
+            <div class="info learning">
+              <h4>Learning</h4>
+              <ul>
+                <li>Courses</li>
+                <li>Syllabus</li>
+                <li>Pricing</li>
+              </ul>
+            </div>
+            <div class="info helpfullinks">
+              <h4>HelpfulLinks</h4>
+              <ul>
+                <li>Customer Support</li>
+                <li>Log In</li>
+                <li>Our Story</li>
+              </ul>
+            </div>
+          </div>
+          <div class="subscribe foot">
+            <h5>Subscribe</h5>
+            <div class="email">
+              <input type="email" placeholder="Enter your Email">
+              <i class="fa-regular fa-envelope"></i>
+            </div>
+            <button type="submit">Subscribe</button>
+          </div>
+        </div>  
+        <div class="divider"></div>
+        <div class="socials">
+          <i class="fa-brands fa-facebook-f"></i>
+          <i class="fa-brands fa-twitter"></i>
+          <i class="fa-brands fa-linkedin-in"></i>
+          <i class="fa-brands fa-instagram"></i>
+        </div>
+      </div>
+    </footer>
+    <script src="./JS/index.js"></script>
   </body>
 </html>
