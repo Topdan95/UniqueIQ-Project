@@ -108,8 +108,10 @@ header {
     top: 20%;
     left: 108%;
     font-size: 10px;
+    z-index: 5;
 }
 .nav ul li {
+    z-index: 4;
     cursor: pointer;
     margin: 10px 30px;
 }
@@ -124,6 +126,40 @@ header {
     justify-items: center;
     cursor: pointer;
 }
+
+.nav ul {
+    position: relative;
+}
+.nav .course-categories {
+    position: absolute;
+    top: 80%;
+    left: 25%;
+    background: #fff;
+    color: #301446;
+    border-radius: 5px;
+    transform: translateY(-20%);
+    opacity: 0;
+    transition: all 0.5s ease-in-out;
+    box-shadow: 0px 4px 6px #ffffff56;
+}
+.nav .course-categories li{
+    margin: 0;
+    padding: 10px 30px;
+    border-radius: 5px;
+}
+
+.nav .course-categories li:hover {
+    background: #301446;
+    color: #fff;
+}
+
+.toggle-course {
+    transform: translateY(0) !important;
+    opacity: 1 !important;
+}
+
+
+
 /* Main section */
 .hero {
     display: flex;
@@ -154,6 +190,7 @@ header {
     border: 1px solid #fff;
     width: 70%;
     border-radius: 5px;
+    color: white;
 } 
 .search input::placeholder {
     color: #fff;
@@ -178,10 +215,10 @@ header {
 }
 .various ul{
     display: flex;
-    cursor: pointer;
     justify-content: space-between;
 }
 .various li {
+    cursor: pointer;
     font-weight: 600;
     color: #23262A;
     padding-bottom: 15px;
@@ -203,7 +240,7 @@ header {
     color: #333;
     display: flex;
     justify-content: space-between;
-    overflow-x: scroll;
+    overflow: hidden;
     padding: 5px;
 }
 .cards .card {
@@ -296,24 +333,34 @@ header {
     border-radius: 7px;
     align-items: center;
 }
+.usage .carrd .icon img {
+    box-shadow: 0px 21.8182px 32.7273px rgba(0, 0, 0, 0.06), 0px 2.72727px 8.18182px rgba(0, 0, 0, 0.04), 0px 0px 1.36364px rgba(0, 0, 0, 0.04);
+    background: #fff;
+    padding: 10px;
+    height: 60px;
+    width: 60px;
+}
 .usage .carrd p {
     font-size: 14px;
-    text-align: center;
+    text-align: left;
 }
 .usage .carrd h3 {
     font-weight: 700 ;
     margin: 20px 0 ;
-    font-size: 14px;
-    text-align: center;
+    font-size: 16px;
+    text-align: left;
 }
-.usage .carrd:hover{
+.usage .carrd:hover {
     color: #fff !important;
     background: #301446;
+}
+.usage .img:hover {
+    color: white;
 }
 /* Explore Section */
 .explore {
     background: url(./images/ebgd.png) no-repeat center/cover;
-    height: 300px;
+    height: 337px;
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -341,8 +388,9 @@ header {
 /* Students Section */
 .students .container {
     position: relative;
+    overflow: hidden;
 }
-.students .toggle {
+.students .toggler {
     position: absolute;
     top: 30%;
     right: 4%;
@@ -354,7 +402,7 @@ header {
     text-align: center;
     cursor: pointer;
 }
-.students .toggle i {
+.students .toggler i {
     font-size: 22px;
 }
 .students h2{
@@ -371,16 +419,18 @@ header {
     display: flex;
     justify-content: space-between;
     margin-bottom: 100px;
+    transition: all 0.5s ease-in-out;
 }
 .students .cardd {
-    width: 280px;
-    height: 300px;
+    min-width: 300px ;
+    height: fit-content;
     padding: 20px;
     box-shadow: 0px 4.23792px 8.47584px rgba(0, 0, 0, 0.04), 0px 0px 2.11896px rgba(0, 0, 0, 0.06), 0px 0px 1.05948px rgba(0, 0, 0, 0.04);
     border-radius: 32px 0px;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    margin: 10px;
 }
 .students .cardd .profile {
     display: flex;
@@ -400,14 +450,20 @@ header {
 .students .logos {
     display: flex;
     align-items: center;
-    justify-content: baseline;
+    /* justify-content: baseline; */
+    justify-content: center;
+    flex-wrap: wrap;
 }
 .students .logos img {
     margin-right: 60px;
+    margin-bottom: 20px;
 }
 /* Footer */
 footer {
     background: #301446;
+    color: #E8E6F2;
+}
+footer li a {
     color: #E8E6F2;
 }
 :is(footer) h3,h4,h5,a{
@@ -470,6 +526,7 @@ footer {
 }
 .main-content .subscribe .email input {
     padding: 10px 10px 10px 30px;
+    outline: none;
 }
 .main-content .subscribe .email input::placeholder {
     color: #301446;
@@ -499,7 +556,7 @@ footer {
     margin-bottom: -30px;
 }
 .socials i {
-    margin: 0 20px;
+    margin: 0 10px;
     color: #301446;
     background: #fff;
     border-radius: 50%;
@@ -541,10 +598,41 @@ footer {
     .usage .carrds {
         display: block !important;
     }
+
+    .usage .carrd .icon img{
+        background: #fff;
+        box-shadow: 0px 21.8182px 32.7273px rgba(0, 0, 0, 0.06), 0px 2.72727px 8.18182px rgba(0, 0, 0, 0.04), 0px 0px 1.36364px rgba(0, 0, 0, 0.04);
+        border-radius: 50%;
+        padding: 5px;
+        width: 50px;
+        height: 50px;
+        margin-right: 20px;
+    }
     .usage .carrd {
         flex-direction: row;
     }
-    .explore {
+    .students .cardds .cardd {
+        flex-direction: column;
+    } 
+    .students .cardd  .profile{
         display: flex;
     }
+    
+    .main-content {
+        display: block;
+    }
+
+    .main-content .infos {
+        flex-direction: column;
+        margin-bottom: 30px;
+    }
+    .main-content .foot {
+        width: 100%;
+    }
+}
+
+
+
+.move {
+    transform: translateX(-200px) !important;
 }

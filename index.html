@@ -10,6 +10,10 @@
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="./images/logo.svg" type="image/x-icon">
     <script src="https://kit.fontawesome.com/5ffe98f822.js" crossorigin="anonymous"></script>
+
+
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/gsap.min.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TimelineLite.min.js"></script> -->
     <title>UniqueIQ</title>
   </head>
   <body>
@@ -40,7 +44,7 @@
         </div>
         <div class="mobile-logo">
           <div class="logo">
-            <img src="./images/logo.svg" alt="The UniqeIQ">
+            <a href="/"><img src="./images/logo.svg" alt="The UniqeIQ"></a>
           </div>
           <div>
             <img src="./images/feather_search.svg" alt="">
@@ -51,15 +55,25 @@
         </div>
       </div>
     </div>
-    
+
     <div class="showcase">
       <header>
         <nav class="nav">
           <ul>
             <li><a href="/">Home</a></li>
-            <li>Course Categories <i class="fa-solid fa-chevron-down"></i></li>
+            <li class="drop-down-course">Course Categories <i class="fa-solid fa-chevron-down"></i></li>
+            <div class="course-categories">
+            
+                <li>Artficial Intelligence</li>
+                <li>Agile & HR<br>Development</li>
+                <li>Branding & <br> Designs</li>
+                <li>Businesss</li>
+                <li>Data &<br>Analytics</li>
+                <li>Programming</li>
+              
+            </div>
             <li><a href="./Pages/AboutUs/about.html">About Us</a></li>
-            <li>Log In</li>
+            <li><a href="#">Log In</a></li>
             <li><a href="./Pages/SignUp/signup.html"><button class="btn">Sign Up</button></a></li>
           </ul>
         </nav>
@@ -87,13 +101,13 @@
           </div>
           <div class="various">
             <ul>
-              <li>Artficial Intelligence</li>
-              <li>Agile & HR<br>Development</li>
-              <li class="active">Branding & <br> Designs</li>
-              <li>Businesss</li>
-              <li>Data &<br>Analytics</li>
-              <li>Programming</li>
-              <li>More</li>
+              <li class="course-t">Artficial Intelligence</li>
+              <li class="course-t">Agile & HR<br>Development</li>
+              <li class="course-t active">Branding & <br> Designs</li>
+              <li class="course-t">Businesss</li>
+              <li class="course-t">Data &<br>Analytics</li>
+              <li class="course-t">Programming</li>
+              <li class="course-t">More</li>
             </ul>
           </div>
           <div class="throw-up">
@@ -247,7 +261,7 @@
           </div>
           <div>
             <h3>
-              Learn From Your Comfort Zone’s
+              Learn From Your Comfort<br>Zone’s
             </h3>
             <p>Egestas eleifend risus dui tempor morbi maecenas scelerisque eu. Eget ultrices cursus at vel.</p>
           </div>
@@ -258,7 +272,7 @@
           </div>
           <div>
             <h3>
-              Learn From Expert in the Industry.
+              Learn From Expert in the<br>Industry.
             </h3>
             <p>Egestas eleifend risus dui tempor morbi maecenas scelerisque eu. Eget ultrices cursus at vel.</p>
           </div>
@@ -269,7 +283,7 @@
           </div>
           <div>
             <h3>
-              All Courses Simplified as Much As Possible
+              All Courses Simplified as<br>Much As Possible
             </h3>
             <p>Egestas eleifend risus dui tempor morbi maecenas scelerisque eu. Eget ultrices cursus at vel.</p>
           </div>
@@ -280,7 +294,7 @@
           </div>
           <div>
             <h3>
-              All Courses Simplified as Much As Possible
+              All Courses Simplified asMuch As Possible
             </h3>
             <p>Egestas eleifend risus dui tempor morbi maecenas scelerisque eu. Eget ultrices cursus at vel.</p>
           </div>
@@ -304,6 +318,28 @@
             </div>
             <p>TheUniqueIQ is a life saver. I don't have the time or money for a college education. My goal is to become a freelance web developer, and thanks to TheUniqueIQ, I'm really close.</p>
           </div>
+
+          <div class="cardd">
+            <div class="profile">
+              <img src="./images/Ellipse3.png" alt="Mary">
+              <h4>Mary</h4>
+            </div>
+            <p>TheUniqueIQ is a life saver. I don't have the time or money for a college education. My goal is to become a freelance web developer, and thanks to TheUniqueIQ, I'm really close.</p>
+          </div>
+          <div class="cardd">
+            <div class="profile">
+              <img src="./images/Ellipse3.png" alt="Mary">
+              <h4>Mary</h4>
+            </div>
+            <p>TheUniqueIQ is a life saver. I don't have the time or money for a college education. My goal is to become a freelance web developer, and thanks to TheUniqueIQ, I'm really close.</p>
+          </div>
+          <div class="cardd">
+            <div class="profile">
+              <img src="./images/Ellipse3.png" alt="Mary">
+              <h4>Mary</h4>
+            </div>
+            <p>TheUniqueIQ is a life saver. I don't have the time or money for a college education. My goal is to become a freelance web developer, and thanks to TheUniqueIQ, I'm really close.</p>
+          </div>
           <div class="cardd">
             <div class="profile">
               <img src="./images/Ellipse3.png" alt="Mary">
@@ -319,12 +355,13 @@
             <p>TheUniqueIQ is a life saver. I don't have the time or money for a college education. My goal is to become a freelance web developer, and thanks to TheUniqueIQ, I'm really close.</p>
           </div>
         </div>
-        <div class="toggle">
+
+        <div class="toggler">
           <i class="fa-solid fa-chevron-right"></i>
         </div>
         <h3>Our Tutors And Mentors Come From Leading Companies</h3>
         <div class="logos">
-          <img src="./images/google.png" alt="googla">
+          <a href="https://www.google.com/"><img src="./images/google.png" alt="googla"></a>
           <img src="./images/andela.png" alt="andela">
           <img src="./images/intelia.png" alt="intelia">
           <img src="./images/flutterwave.png" alt="flutterwave">
@@ -342,7 +379,7 @@
             </div>
             <div class="about">
               <h3><a href="./Pages/AboutUs/about.html">About Us</a></h3>
-              <p>The UniqueIQ is the first of its kind in Africa. An organisation that leverages best in class teachers, </p>
+              <p>The UniqueIQ is the first of its kind in Africa. An organisation that leverages best in class teachers. </p>
             </div>
             <div class="contact">
               <h3>Contact Us</h3>
@@ -356,7 +393,7 @@
               </div>
               <div>
                 <img src="./images/loc.svg" alt="loc">
-                <span>2a Ibara housing estate kuto, Abeokuta Ogun state</span>
+                <span>2a Ibara housing estate kuto, Abeokuta Ogun state</san>
               </div>
             </div>
           </div>
@@ -364,26 +401,26 @@
             <div class="info information">
               <h4>Information</h4>
               <ul>
-                <li>Home</li>
-                <li>Log In</li>
-                <li>Our Story</li>
-                <li>Register</li>
+                <li><a href="/">Home</a></li>
+                <li><a href="#">Log In</a></li>
+                <li><a href="#">Our Story</a></li>
+                <li><a href="#">Register</a></li>
               </ul>
             </div>
             <div class="info learning">
               <h4>Learning</h4>
               <ul>
-                <li>Courses</li>
-                <li>Syllabus</li>
-                <li>Pricing</li>
+                <li><a href="#">Courses</a></li>
+                <li><a href="#">Syllabus</a></li>
+                <li><a href="#">Pricing</a></li>
               </ul>
             </div>
             <div class="info helpfullinks">
               <h4>HelpfulLinks</h4>
               <ul>
-                <li>Customer Support</li>
-                <li>Log In</li>
-                <li>Our Story</li>
+                <li><a href="#">Customer Support</a></li>
+                <li><a href="#">Log In</a></li>
+                <li><a href="#">Our Story</a></li>
               </ul>
             </div>
           </div>

@@ -5,24 +5,72 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="about.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="./images/logo.svg" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/5ffe98f822.js" crossorigin="anonymous"></script>
     <title>About Us</title>
 </head>
 <body>
-  <header>
-    <div class="case">
-      <div class="logo">
-          <img src="./images/logo.svg" alt="logo">
+  <div class="mobile-navbar">
+    <div class="mobile-container">
+      <div class="menu-botton">
+        <div class="hamburger">
+          <img src="../../images/hamburger.svg" alt="hamburger">
+        </div>
+        <div class="mobile-navigations">
+          <div class="sign">
+            <div class="sign-up"><a href="../../Pages/SignUp/signup.html">Sign Up</a></div>
+            <div class="log-in"><a href="#">Log In</a></div>
+          </div>
+          <div class="mobile-lists">
+            <ul>
+              <li>Course</li>
+              <li>Artificial Intelligence <i class="fa-solid fa-chevron-right"></i></li>
+              <li>Branding <i class="fa-solid fa-chevron-right"></i></li>
+              <li>Business <i class="fa-solid fa-chevron-right"></i></li>
+              <li>Design <i class="fa-solid fa-chevron-right"></i></li>
+              <li>Data & Analytic <i class="fa-solid fa-chevron-right"></i></li>
+              <li>Help</li>
+              <li>Log Out</li>
+            </ul>
+          </div>
+        </div>
       </div>
-      <nav class="nav">
-        <ul>
-          <li><a href="/">Home</a></li>
-          <li>Course Categories <i class="fa-solid fa-chevron-down"></i></li>
-          <li><a href="../AboutUs/about.html">About Us</a></li>
-          <li>Log In</li>
-          <li><a href="../SignUp/signup.html"><button class="btn">Sign Up</button></a></li>
-        </ul>
-      </nav>
+      <div class="mobile-logo">
+        <div class="logo">
+          <a href="/"><img src="../../images/logo.svg" alt="The UniqeIQ"></a>
+        </div>
+        <div>
+          <img src="../../images/feather_search.svg" alt="search">
+        </div>
+        <div>
+          <img src="../../images/cart.svg" alt="cart">
+        </div>
+      </div>
     </div>
+  </div>
+  <header>
+    <nav class="nav">
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li class="drop-down-course">Course Categories <i class="fa-solid fa-chevron-down"></i></li>
+        <div class="course-categories">
+            
+          <li>Artficial Intelligence</li>
+          <li>Agile & HR<br>Development</li>
+          <li>Branding & <br> Designs</li>
+          <li>Businesss</li>
+          <li>Data &<br>Analytics</li>
+          <li>Programming</li>
+        
+      </div>
+        <li><a href="../AboutUs/about.html">About Us</a></li>
+        <li>Log In</li>
+        <li><a href="../SignUp/signup.html"><button class="btn">Sign Up</button></a></li>
+      </ul>
+    </nav>
   </header>
 
   <div class="discover">
@@ -41,9 +89,9 @@
             <img src="./images/unique1.svg" alt="">
           </div>
           <h5>
-            To be Creative
+            To be Creative 
           </h5>
-          <p> Tellus vestibulum nisl,<br>vitae, nullam<br>pellentesque vel</p>
+          <p> Tellus vestibulum nisl, vitae, nullam pellentesque vel</p>
         </div>
         <div class="inspire">
             <div class="icon1">
@@ -52,7 +100,7 @@
             <h5>
               To be Creative
             </h5>
-            <p> Tellus vestibulum nisl,<br>vitae, nullam<br>pellentesque vel</p>
+            <p> Tellus vestibulum nisl,vitae, nullam pellentesque vel</p>
           </div>
           <div class="inspire">
             <div class="icon1">
@@ -61,7 +109,7 @@
             <h5>
               To be Creative
             </h5>
-            <p> Tellus vestibulum nisl,<br>vitae, nullam<br>pellentesque vel</p>
+            <p> Tellus vestibulum nisl, vitae, nullam pellentesque vel</p>
           </div>
     </div>
     <section class="explore">
@@ -72,8 +120,8 @@
     <div class="tutors">
         <h3>Our Tutors And Mentors Come From Leading Companies</h3>
         <div class="logos">
-              <img src="./images/google.png" alt="google">
-              <img src="./images/andela.png" alt="andela">
+          <a href="https://www.google.com/"><img src="./images/google.png" alt="googla"></a>
+          <a href="https://andela.com/"><img src="./images/andela.png" alt="andela"></a>    
               <img src="./images/intelia.png" alt="intelia">
               <img src="./images/flutterwave.png" alt="flutterwave">
               <img src="./images/paystack.png" alt="paystack">
@@ -86,7 +134,7 @@
       <div class="main-content">
         <div class="logo-section foot">
           <div class="banner">
-            <img src="../../images/logo.svg" alt="UniqueIQ">
+            <a href="/"><img src="../../images/logo.svg" alt="UniqueIQ"></a>
           </div>
           <div class="about">
             <h3><a href="./Pages/AboutUs/about.html">About Us</a></h3>
@@ -112,7 +160,7 @@
           <div class="info information">
             <h4>Information</h4>
             <ul>
-              <li>Home</li>
+              <li><a href="/">Home</a></li>
               <li>Log In</li>
               <li>Our Story</li>
               <li>Register</li>
@@ -153,5 +201,7 @@
       </div>
     </div>
   </footer>
+
+  <script src="../../JS/index.js"></script>
 </body>
 </html>
