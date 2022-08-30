@@ -233,11 +233,13 @@ header {
 .throw-up {
     display: none;
     margin-top: 5px;
+    position: relative;
 }
 .throw-up i {
     font-size: 14px;
     color: #333;
 }
+
 .cards {
     margin-top: 50px;
     color: #333;

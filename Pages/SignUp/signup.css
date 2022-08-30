@@ -46,6 +46,7 @@ body {
     background: #fff;
 }
 :is(.sign) h3 {
+    cursor: pointer;
     font-size: 16px;
     font-weight: 600;
     color: #000;
@@ -106,6 +107,6 @@ form button {
         width: 96% !important;
     }
     .container{
-        padding: 25% 15%;
+        padding: 25% 5%;
     }
 }
