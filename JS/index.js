@@ -2,13 +2,19 @@ const element = document.querySelector(".hamburger");
 const mobileNav = document.querySelector(".mobile-navigations");
 const courseDropDown = document.querySelector(".drop-down-course");
 const courseEl = document.querySelector(".course-categories");
+const scrollEl = document.querySelector(".cardds");
+const scrollElRight = document.querySelector(".toggle-right");
+const scrollElLeft = document.querySelector(".toggle-left");
+const switchEl = document.querySelector(".cards")
+const switchElLeft = document.querySelector(".switch-left");
+const switchElRight = document.querySelector(".switch-right");
 
 const toggleNavbar = () => {
     mobileNav.classList.toggle("toggle-nav");
 };
 
 const toggleCourse = () => {
-    courseEl.classList.toggle("toggle-course")
+    courseEl.classList.toggle("toggle-course");
 }
 
 element.addEventListener('click', toggleNavbar);
@@ -18,17 +24,41 @@ courseDropDown.addEventListener('click', toggleCourse);
 window.onscroll = () => {
     mobileNav.classList.remove("toggle-nav");
     courseEl.classList.remove("toggle-course");
-}
+};
 
 
-const cardds = document.querySelector(".cardds");
-const toggleHandler = document.querySelector(".toggler");
+const scrollLeft = () => {
+    scrollEl.scrollBy(350, 0);
+};
 
-const moveCard = () => {
-    cardds.style.transform = 'translateX(-400px)';
-}
+const scrollRight = () => {
+    scrollEl.scrollBy(-350, 0);
+};
 
-toggleHandler.addEventListener('click', moveCard);
+scrollElLeft.addEventListener('click', scrollLeft)
+scrollElRight.addEventListener('click', scrollRight)
+
+const switchLeft = () => {
+    console.log(123)
+    switchEl.scrollBy(400, 0);
+};
+
+const switchRight = () => {
+    console.log(321)
+    switchEl.scrollBy(-400, 0);
+};
+
+switchElLeft.addEventListener('click', switchLeft)
+switchElRight.addEventListener('click', switchRight)
+
+// const cardds = document.querySelector(".cardds");
+// const toggleHandler = document.querySelector(".toggler");
+
+// const moveCard = () => {
+//     cardds.style.transform = 'translateX(-400px)';
+// }
+
+// toggleHandler.addEventListener('click', moveCard);
 
 
 
