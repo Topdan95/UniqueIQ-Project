@@ -12,6 +12,7 @@ body {
     text-align: center;
     position: fixed;
     background: #fff;
+    z-index: 99;
 }
 .header .logo img {
     width: 80px;
@@ -66,6 +67,24 @@ margin: 50px 0 30px 0;
 .form-container {
     padding: 0 50px;
 }
+form small {
+    position: absolute;
+    bottom: -15px; 
+    left: 10px;
+    margin-top: 20px;
+    visibility: hidden;
+}
+
+
+form .line {
+    display: flex;
+    /* width: 100%; */
+}
+form .form-control {
+    position: relative;
+    width: 96%;
+    margin: 2%;
+}
 form input {
     margin: 2%;
     padding: 20px;
@@ -73,10 +92,10 @@ form input {
     border: 1px solid #333;
 }
 form .email input {
-    width: 96%;
+    width: 98%;
 }
 :is(.name,.password) input {
-    width: 46%;
+    width: 98%;
 }
 form input::placeholder {
     color: #333;
@@ -86,7 +105,7 @@ form p {
     width: 96%;
     text-align: left;
     color: #333;
-    margin: 15px 2% 30px 2%;
+    margin: 20px 2% 30px 2%;
 }
 form p strong {
     color: #301446;
@@ -102,11 +121,36 @@ form button {
     color: #fff;
     cursor: pointer;
 }
+
+form button i{
+    visibility: hidden;
+}
+
+
+.form-control.success input {
+    border: 2px solid#2ecc71;
+    width: 100%;
+}
+
+.form-control.error input {
+    border: 2px solid #e74c3c;
+    width: 100%;
+}
+
+.form-control.error small {
+    color: #e74c3c;
+    visibility: visible;
+}
+
+
 @media screen and (max-width: 768px) {
     form input {
         width: 96% !important;
     }
     .container{
         padding: 25% 5%;
+    }
+    form .line {
+        flex-direction: column;
     }
 }

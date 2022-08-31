@@ -35,21 +35,26 @@
                     <p>Build skills for today, tomorrow, and beyond.</p>
                     <p>Education to future-proof your career</p>
                 </div>
-                <form action="#">
-                    <div class="name">
-                        <input type="text" placeholder="First Name"><input type="text" placeholder="Last Name">
+                <form action="" method="GET" id="form">
+                    <div class="name line">
+                        <div class="firstName form-control"><input type="text" placeholder="First Name" id="firstName"><small>Error Message</small></div>
+                        <div class="lastName form-control"><input type="text" placeholder="Last Name" id="lastName"><small>Error Message</small></div>
                     </div>
-                    <div class="email">
-                        <input type="email" placeholder="Email address">
+                    <div class="email form-control">
+                        <input type="email" placeholder="Email address" id="email"><small>Error Message</small>
                     </div>
-                    <div class="password">
-                        <input type="password" placeholder="Password"><input type="password" placeholder="Confirm Password">
+                    <div class="password line">
+                        <div class="password form-control"><input type="password" placeholder="Password" id="password"><small>Error Message</small></div>
+                        <div class="confirmPassword form-control"><input type="password" placeholder="Confirm Password" id="confirmPassword"><small>Error Message</small></div>
+                        
                     </div>
                     <p>By clicking Sign Up, you agree to our <strong>Terms of Use</strong>  and our <strong>Privacy Policy</strong>.</p>
-                    <button type="submit">SIGN UP</button>
+                    <button type="submit" id="signUp">SIGN UP <i class="fa fa-spinner fa-spin"></i></button>
                 </form>
             </div>
         </div>
     </div>
+
+    <script src="./signUp.js"></script>
 </body>
 </html>

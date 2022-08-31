@@ -50,8 +50,6 @@ switchElLeft.addEventListener('click', switchLeft)
 switchElRight.addEventListener('click', switchRight)
 
 
-// Form Validation
-
 
 
 
