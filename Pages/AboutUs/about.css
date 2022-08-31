@@ -388,6 +388,13 @@ footer li a {
     .mobile-navbar {
         display: block;
     }
+    .mobile-lists li:hover {
+        background: #301446;
+        color: white;
+        border-radius: 5px;
+        width: 100%;
+        padding: 10px 0px;
+    }
 
     .creative p {
         margin: 20px 40px;

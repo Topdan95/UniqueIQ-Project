@@ -12,6 +12,7 @@ body {
     height: 100vh;
     overflow: hidden;
 }
+
 /* Utility styles */
 ul {
     list-style: none;
@@ -19,6 +20,7 @@ ul {
 a {
     text-decoration: none;
 }
+
 /* Mobile navbar */
 .mobile-navbar {
     display: none;
@@ -83,6 +85,7 @@ a {
     justify-content: space-between;
     margin-bottom: 20px;
 }
+
 /* Header Section */
 header {
     width: 100%;
@@ -126,7 +129,6 @@ header {
     justify-items: center;
     cursor: pointer;
 }
-
 .nav ul {
     position: relative;
 }
@@ -147,18 +149,14 @@ header {
     padding: 10px 30px;
     border-radius: 5px;
 }
-
 .nav .course-categories li:hover {
     background: #301446;
     color: #fff;
 }
-
 .toggle-course {
     transform: translateY(0) !important;
     opacity: 1 !important;
 }
-
-
 
 /* Main section */
 .hero {
@@ -167,7 +165,7 @@ header {
     padding: 80px;
     margin-top: -30px;
 }
-.item{
+.item {
     width: 50%;
 }
 .item2 img {
@@ -203,6 +201,7 @@ header {
     left: 60%;
     top: 30%;
 }
+
 /* Browse Section */
 .container {
     padding: 80px;
@@ -239,7 +238,16 @@ header {
     font-size: 14px;
     color: #333;
 }
-
+/* .switch-left img{
+    transition-property: color background-color;
+    transition-duration: 0.2s;
+    transition-timing-function: ease-in;
+}
+.switch-left img:hover {
+   background-color: grey;
+   border-radius: 20px;
+   width: 40%;
+} */
 .cards {
     margin-top: 50px;
     color: #333;
@@ -249,11 +257,9 @@ header {
     scroll-behavior: smooth;
     padding: 5px;
 }
-
 .cards::-webkit-scrollbar {
     -webkit-appearance: none;
 }
-
 .browse .switch {
     position: absolute;
     top: 88%;
@@ -262,6 +268,16 @@ header {
 .browse .switch-right {
     right: 4%;
 }
+/* .switch-right img{
+     transition-property: color background-color;
+     transition-duration: 0.2s;
+     transition-timing-function: ease-in;
+}
+.switch-right img:hover {
+    background-color: grey;
+    border-radius: 20px;
+    width: 40%;
+} */
 .browse .switch-left {
     transform: rotate(180deg);
     left: 4%;
@@ -326,6 +342,7 @@ header {
 .sales h2{
     font-weight: 600;
 }
+
 /* Usage Section */
 .usage .title h1 {
     color: #021C37;
@@ -384,6 +401,7 @@ header {
 .usage .img:hover {
     color: white;
 }
+
 /* Explore Section */
 .explore {
     background: url(./images/ebgd.png) no-repeat center/cover;
@@ -413,6 +431,7 @@ header {
     color: #fff;
     cursor: pointer;
 }
+
 /* Students Section */
 .students .container {
     position: relative;
@@ -432,7 +451,6 @@ header {
 .students .toggle-right {
     right: 4%;
 }
-
 .students .toggle-left {
     left: 4%;
 }
@@ -457,12 +475,8 @@ header {
     overflow: auto;
     scroll-behavior: smooth;
 }
-
-
-
 .students .cardds::-webkit-scrollbar {
     -webkit-appearance: none;
-
 }
 .students .cardd {
     min-width: 300px ;
@@ -493,7 +507,6 @@ header {
 .students .logos {
     display: flex;
     align-items: center;
-    /* justify-content: baseline; */
     justify-content: center;
     flex-wrap: wrap;
 }
@@ -501,6 +514,7 @@ header {
     margin-right: 60px;
     margin-bottom: 20px;
 }
+
 /* Footer */
 footer {
     background: #301446;
@@ -609,12 +623,20 @@ footer li a {
     align-items: center;
     justify-content: center;
 }
+
 @media screen and (max-width: 768px) {
     header {
         display: none;
     }
     .mobile-navbar {
         display: block;
+    }
+    .mobile-lists li:hover {
+        background: #301446;
+        color: white;
+        border-radius: 5px;
+        width: 100%;
+        padding: 10px 0px;
     }
     .hero {
         padding: 80px 30px 30px 30px ;
@@ -641,7 +663,6 @@ footer li a {
     .usage .carrds {
         display: block !important;
     }
-
     .usage .carrd .icon img{
         background: #fff;
         box-shadow: 0px 21.8182px 32.7273px rgba(0, 0, 0, 0.06), 0px 2.72727px 8.18182px rgba(0, 0, 0, 0.04), 0px 0px 1.36364px rgba(0, 0, 0, 0.04);
@@ -657,14 +678,12 @@ footer li a {
     .students .cardds .cardd {
         flex-direction: column;
     } 
-    .students .cardd  .profile{
+    .students .cardd  .profile {
         display: flex;
     }
-    
     .main-content {
         display: block;
     }
-
     .main-content .infos {
         flex-direction: column;
         margin-bottom: 30px;
@@ -673,9 +692,6 @@ footer li a {
         width: 100%;
     }
 }
-
-
-
 .move {
     transform: translateX(-200px) !important;
 }
