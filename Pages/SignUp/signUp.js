@@ -9,8 +9,6 @@ const form = document.getElementById('form');
 
 signUpButton.disabled = true;
 
-
-
 const validateFirstName = () => {
     
     const firstNameValue = firstName.value.trim();
